@@ -1,0 +1,72 @@
+{
+  "groups": [
+    {
+      "name": "chenxin",
+      "type": "com.example.demochapter02.domain.Chenxin",
+      "sourceType": "com.example.demochapter02.domain.Chenxin"
+    },
+    {
+      "name": "my",
+      "type": "com.example.demochapter02.domain.MyProperties",
+      "sourceType": "com.example.demochapter02.domain.MyProperties"
+    },
+    {
+      "name": "person",
+      "type": "com.example.demochapter02.domain.Person",
+      "sourceType": "com.example.demochapter02.domain.Person"
+    }
+  ],
+  "properties": [
+    {
+      "name": "chenxin.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.demochapter02.domain.Chenxin"
+    },
+    {
+      "name": "chenxin.name",
+      "type": "java.lang.String",
+      "sourceType": "com.example.demochapter02.domain.Chenxin"
+    },
+    {
+      "name": "my.course-name",
+      "type": "java.lang.String",
+      "sourceType": "com.example.demochapter02.domain.MyProperties"
+    },
+    {
+      "name": "my.name",
+      "type": "java.lang.String",
+      "sourceType": "com.example.demochapter02.domain.MyProperties"
+    },
+    {
+      "name": "person.family",
+      "type": "java.lang.String[]",
+      "sourceType": "com.example.demochapter02.domain.Person"
+    },
+    {
+      "name": "person.hobby",
+      "type": "java.util.List",
+      "sourceType": "com.example.demochapter02.domain.Person"
+    },
+    {
+      "name": "person.id",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.demochapter02.domain.Person"
+    },
+    {
+      "name": "person.map",
+      "type": "java.util.Map",
+      "sourceType": "com.example.demochapter02.domain.Person"
+    },
+    {
+      "name": "person.name",
+      "type": "java.lang.String",
+      "sourceType": "com.example.demochapter02.domain.Person"
+    },
+    {
+      "name": "person.pet",
+      "type": "com.example.demochapter02.domain.Pet",
+      "sourceType": "com.example.demochapter02.domain.Person"
+    }
+  ],
+  "hints": []
+}

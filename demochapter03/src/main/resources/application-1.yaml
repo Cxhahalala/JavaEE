@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: demochapter03
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 50MB
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+#  mvc:
+#    static-path-pattern: /backend/**
+#  web:
+#    resources:
+#      static-locations: "file:D:/JavaProjects/JavaEE/SpringBoot/demochapter03/src/main/resources/backend/"
+

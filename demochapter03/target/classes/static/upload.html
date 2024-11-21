@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上传图片</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="file"] {
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>图片上传</h1>
+
+    <!-- 上传图片表单 -->
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">选择图片文件：</label>
+        <input type="file" id="file" name="file" accept="image/*" onchange="previewImage(event)" required>
+        <br><br>
+        <button type="submit">上传</button>
+    </form>
+
+    <!-- 预览图片 -->
+    <div id="preview">
+        <h2>图片预览：</h2>
+        <img id="previewImg" src="#" alt="图片预览" style="display:none;">
+    </div>
+</div>
+
+<script>
+    function previewImage(event) {
+        const preview = document.getElementById('previewImg');
+        const file = event.target.files[0];
+
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block'; // 显示预览图片
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+</script>
+
+</body>
+</html>
