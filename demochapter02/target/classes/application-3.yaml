@@ -1,0 +1,4 @@
+chenxin:
+  name: chenxin's age is ${chenxin.age}
+  age: ${random.int[10,20]}
+
