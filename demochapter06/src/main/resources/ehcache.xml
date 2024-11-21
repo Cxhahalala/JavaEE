@@ -1,0 +1,21 @@
+<config xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xmlns='http://www.ehcache.org/v3'
+        xsi:schemaLocation="http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core.xsd">
+    <!-- 配置默认缓存设置 -->
+    <cache alias="defaultCache">
+        <expiry>
+            <ttl unit="seconds">600</ttl> <!-- 设置默认过期时间为600秒 -->
+        </expiry>
+        <heap unit="entries">500</heap> <!-- 缓存的最大条目数 -->
+    </cache>
+    <cache alias="book">
+        <key-type>java.lang.Integer</key-type> <!--缓存键类型-->
+        <value-type>java.lang.Object</value-type> <!--缓存值类型-->
+        <expiry>
+            <ttl unit="seconds">3600</ttl> <!--设置过期时间为3600秒-->
+        </expiry>
+        <heap unit="entries">1000</heap>
+    </cache>
+
+</config>
+
